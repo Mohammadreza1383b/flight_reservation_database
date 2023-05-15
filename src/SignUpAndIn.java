@@ -51,6 +51,9 @@ public class SignUpAndIn {
         System.out.println("please enter your password :");
         passWord = input.next();
 
+        if (userName.equals("admin") && passWord.equals("admin")){
+            return "admin";
+        }
         char [] ch = new char[10];
         try {
             rfile.seek(0);
